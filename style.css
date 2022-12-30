@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Inter';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background: #000000;
+    border-bottom: 2px solid #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24px);
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+header a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.rightNav {
+    display: flex;
+    gap: 18px;
+}
+
+ 
+    
+ #home {
+    background: #000000;
+    padding-top: 86px;
+    display: flex;
+    align-self: flex-end;
+}
+
+#home > h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 242px;
+    color: #FFFFFF;
+    max-width: 60%;
+}
+#home > img {
+    align-self: flex-end;
+}
+
+#about {
+    padding: 180px 86px;
+    display: flex;
+    gap: 86px;
+}
+
+
+
+.aboutDetails > h3, #services > p {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+    color: #000000;
+}
+.aboutDetails > p, .serviceBox > p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+
+
+#services {
+    padding: 24px 86px 64px;
+    gap: 86px;
+}
+.scrollCont {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 64px -86px;
+    padding-left: 86px;
+}
+.serviceBox {
+    border: 1px solid black;
+    padding: 32px 44px;
+    width: 400px;
+    white-space: normal;
+    display:inline-block;
+    margin-right: 36px 
+}
+.serviceBox > h4 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    color: #000000;
+    padding-bottom: 24px;
+}
+.scrollCont::-webkit-scrollbar {
+    display: none;
+}
+.scrollCont {
+-ms-overflow-style: none;  
+scrollbar-width: none;  
+}
+
+
+#contact {
+    background: #000000;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 100px 140px;
+    text-align: center;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0px;
+}
+#contact p {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+    color: #FFFFFF;
+}
+.contactForm > input {
+    background: black;
+    color: #FFFFFF;
+    height: 32px;
+    padding: 8px 18px;
+    border: 1px solid #FFFFFF;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+#contact button{
+    align-self: flex-start;
+    width: 240px;
+    height: 48px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000;
+}
+
+.popup{
+    width: 300px;
+    background-color: #82f174;
+    border-radius: 16px;
+    position: absolute;
+    text-align: center;
+    padding: 10px 10px 10px;
+    color: #000;
+    display: none;
+    left: 40%;
+}
+.openpopup{
+    visibility: visible;
+    
+}
+
+.popup h4{
+    font-size: 40px;
+    margin: 20px 0 20px;
+
+}
+
+
+@media screen and (max-width : 480px) {
+    #home {
+        flex-direction: column-reverse;
+    }
+    #home > img {
+        width: calc(100% - 48px);
+    }
+    #home > h2 {
+        font-size: 46px;
+        max-width: 100%;
+        line-height: 52px;       
+    }
+    header > .logo {
+        display: none;
+    }
+    header a {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    #about > .logo1 {
+        flex-direction: row-reverse;
+         width: calc(100%-48px);
+    }
+    
+ .aboutDetails > h3{
+    font-size: 30px;
+    max-width: 100%;
+    line-height: 40px;
+    }
+    #services > p{
+        font-size: 20px;
+        max-width: 100%;
+    }
+    .serviceBox > p{
+        font-size: 10px;
+    }
+    #services{
+        padding: 20px;
+    }
+    #contact{
+        padding: 20px;
+        justify-content: center;
+    
+    }
+    #contact p{
+        font-size: 20px;
+        max-width: 100%;
+        line-height: 25px;
+        margin: 14px;
+
+    }
+    .contactForm > input{
+        width: 100%;
+        font-size: 12px;
+        margin: 10px;
+        padding-left: 8px;
+
+    }
+    #contact button{
+        justify-content: center;
+    }
+}
+    
+
+
